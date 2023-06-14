@@ -15,6 +15,8 @@ struct RegisterView: View {
                        subtitle: "Start organizing todos",
                        angle: -15,
                        background: .orange)
+            
+            Spacer()
         }
     }
 }
