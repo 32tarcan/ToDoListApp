@@ -30,6 +30,7 @@
 		AF9FA3082A39EE45002E2C71 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FA3072A39EE45002E2C71 /* LoginViewViewModel.swift */; };
 		AF9FA30A2A39EE52002E2C71 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FA3092A39EE52002E2C71 /* RegisterViewViewModel.swift */; };
 		AF9FA30C2A39EE63002E2C71 /* ToDoItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FA30B2A39EE63002E2C71 /* ToDoItemViewViewModel.swift */; };
+		AF9FA30E2A3A1075002E2C71 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FA30D2A3A1074002E2C71 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		AF9FA3072A39EE45002E2C71 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		AF9FA3092A39EE52002E2C71 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		AF9FA30B2A39EE63002E2C71 /* ToDoItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemViewViewModel.swift; sourceTree = "<group>"; };
+		AF9FA30D2A3A1074002E2C71 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				AF9FA2F52A39ED54002E2C71 /* LoginView.swift */,
 				AF9FA2F72A39ED5F002E2C71 /* RegisterView.swift */,
 				AF9FA2F92A39ED97002E2C71 /* ToDoListItemView.swift */,
+				AF9FA30D2A3A1074002E2C71 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF9FA2F62A39ED54002E2C71 /* LoginView.swift in Sources */,
+				AF9FA30E2A3A1075002E2C71 /* HeaderView.swift in Sources */,
 				AF9FA2D52A39DFD1002E2C71 /* MainView.swift in Sources */,
 				AF9FA30C2A39EE63002E2C71 /* ToDoItemViewViewModel.swift in Sources */,
 				AF9FA30A2A39EE52002E2C71 /* RegisterViewViewModel.swift in Sources */,
