@@ -20,6 +20,10 @@ struct RegisterView: View {
                        background: .orange)
             
             Form {
+                if !viewModel.errorMessage.isEmpty {
+                    Text(viewModel.errorMessage)
+                        .foregroundColor(Color.red)
+                }
                 TextField("Full Name", text: $viewModel.name)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .autocorrectionDisabled()
