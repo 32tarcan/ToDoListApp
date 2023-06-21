@@ -30,6 +30,7 @@ struct ToDoListApp: App {
         }
     }
     
+    //MARK: - Notification Permissios and Dispatch
     func askForNotificationPermission() {
         let notificationCenter = UNUserNotificationCenter.current()
         notificationCenter.getNotificationSettings { settings in
@@ -55,9 +56,9 @@ struct ToDoListApp: App {
     
     func dispatchNotificationTwiceDaily() {
         let identifier = "my-morning-notification"
-        let title = "Bugün Yapılacakları Unutma!"
-        let title2 = "Akşam Yapılacakları Unutma!"
-        let body = "Kaçırmış olduğun şeyler olabilir bir göz at"
+        let title = "Check Out What To Do Today!"
+        let title2 = "Don't Forget What To Do in The Evening!"
+        let body = "There might be something you missed, take a look"
         let firstHour = 9
         let firstMinute = 0
         let secondHour = 17
