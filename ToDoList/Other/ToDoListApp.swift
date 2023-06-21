@@ -8,9 +8,11 @@
 import FirebaseCore
 import SwiftUI
 import UserNotifications
+import IQKeyboardManagerSwift
 
 @main
 struct ToDoListApp: App {
+    
     init() {
         FirebaseApp.configure()
     }
@@ -20,6 +22,10 @@ struct ToDoListApp: App {
             MainView()
                 .onAppear {
                     askForNotificationPermission()
+                    IQKeyboardManager.shared.enableAutoToolbar = true
+                    IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+                    
+                    
                 }
         }
     }
@@ -54,7 +60,7 @@ struct ToDoListApp: App {
         let body = "Kaçırmış olduğun şeyler olabilir bir göz at"
         let firstHour = 9
         let firstMinute = 0
-        let secondHour = 18
+        let secondHour = 17
         let secondMinute = 10
         
         let notificationCenter = UNUserNotificationCenter.current()
