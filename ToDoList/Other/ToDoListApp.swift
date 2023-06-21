@@ -75,7 +75,6 @@ struct ToDoListApp: App {
         content.sound = .default
         content2.sound = .default
         
-        let calendar = Calendar.current
         
         var firstDateComponents = DateComponents()
         firstDateComponents.hour = firstHour

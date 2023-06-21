@@ -16,9 +16,9 @@ struct LoginView: View {
             VStack {
                 // Hearder
                 HeaderView(title: "To Do List",
-                           subtitle: "Get things done",
-                           angle: 15,
-                           background: .gray)
+                           subtitle: "Take action now",
+                           angle: 10,
+                           background: .brown)
                 
                 
                 
