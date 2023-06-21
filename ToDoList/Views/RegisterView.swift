@@ -18,36 +18,37 @@ struct RegisterView: View {
                        subtitle: "Start organizing todos",
                        angle: -15,
                        background: .orange)
-            
-            Form {
-                if !viewModel.errorMessage.isEmpty {
-                    Text(viewModel.errorMessage)
-                        .foregroundColor(Color.red)
+            ZStack {
+                Form {
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(Color.red)
+                    }
+                    TextField("Full Name", text: $viewModel.name)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .autocorrectionDisabled()
+                    
+                    TextField("Email Address", text: $viewModel.email)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+                    
+                    SecureField("Password", text: $viewModel.password)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    
+                    TLButton(title: "Create Account",
+                             background: .green
+                    ) {
+                        viewModel.register()
+                        // Attempt registration
+                    }
+                    .padding()
+                    
                 }
-                TextField("Full Name", text: $viewModel.name)
-                    .textFieldStyle(DefaultTextFieldStyle())
-                    .autocorrectionDisabled()
                 
-                TextField("Email Address", text: $viewModel.email)
-                    .textFieldStyle(DefaultTextFieldStyle())
-                    .textInputAutocapitalization(.never)
-                    .autocorrectionDisabled()
                 
-                SecureField("Password", text: $viewModel.password)
-                    .textFieldStyle(DefaultTextFieldStyle())
-                
-                TLButton(title: "Create Account",
-                         background: .green
-                ) {
-                    viewModel.register()
-                    // Attempt registration
-                }
-                         .padding()
-                
+                Spacer()
             }
-            .offset(y: -50)
-            
-            Spacer()
         }
     }
 }

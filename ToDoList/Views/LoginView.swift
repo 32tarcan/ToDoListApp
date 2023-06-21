@@ -53,9 +53,9 @@ struct LoginView: View {
                                        destination: RegisterView())
                         
                     }
-                    .padding(.bottom, 50)
+                    .offset(y: 200)
                     
-                    Spacer()
+                    
                 }
             }
         }
