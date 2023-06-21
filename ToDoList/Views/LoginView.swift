@@ -18,7 +18,7 @@ struct LoginView: View {
                 HeaderView(title: "To Do List",
                            subtitle: "Take action now",
                            angle: 10,
-                           background: .brown)
+                           background: .gray)
                 
                 
                 
