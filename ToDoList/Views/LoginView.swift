@@ -53,7 +53,7 @@ struct LoginView: View {
                                        destination: RegisterView())
                         
                     }
-                    .offset(y: 200)
+                    .offset(y: 180)
                     
                     
                 }
