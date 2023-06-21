@@ -29,14 +29,14 @@ struct ToDoListApp: App {
         notificationCenter.getNotificationSettings { settings in
             switch settings.authorizationStatus {
             case .authorized:
-                dispathNotification()
+                dispatchNotificationTwiceDaily()
             case .denied:
                 
                 return
             case .notDetermined:
                 notificationCenter.requestAuthorization(options: [.alert, .sound]) { didAllow, error in
                     if didAllow {
-                        dispathNotification()
+                        dispatchNotificationTwiceDaily()
                     } else {
                         
                     }
@@ -47,31 +47,45 @@ struct ToDoListApp: App {
         }
     }
     
-    func dispathNotification() {
+    func dispatchNotificationTwiceDaily() {
         let identifier = "my-morning-notification"
         let title = "Bugün Yapılacakları Unutma!"
+        let title2 = "Akşam Yapılacakları Unutma!"
         let body = "Kaçırmış olduğun şeyler olabilir bir göz at"
-        let hour = 16
-        let minute = 56
-        let isDaily = true
+        let firstHour = 9
+        let firstMinute = 0
+        let secondHour = 18
+        let secondMinute = 10
         
         let notificationCenter = UNUserNotificationCenter.current()
         
         let content = UNMutableNotificationContent()
+        let content2 = UNMutableNotificationContent()
+        
         content.title = title
+        content2.title = title2
         content.body = body
+        content2.body = body
         content.sound = .default
+        content2.sound = .default
         
         let calendar = Calendar.current
-        var dateComponents = DateComponents()
-        dateComponents.hour = hour
-        dateComponents.minute = minute
         
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: isDaily)
-        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        var firstDateComponents = DateComponents()
+        firstDateComponents.hour = firstHour
+        firstDateComponents.minute = firstMinute
+        let firstTrigger = UNCalendarNotificationTrigger(dateMatching: firstDateComponents, repeats: true)
+        let firstRequest = UNNotificationRequest(identifier: identifier + "-morning", content: content, trigger: firstTrigger)
         
-        notificationCenter.removePendingNotificationRequests(withIdentifiers: [identifier])
-        notificationCenter.add(request)
+        var secondDateComponents = DateComponents()
+        secondDateComponents.hour = secondHour
+        secondDateComponents.minute = secondMinute
+        let secondTrigger = UNCalendarNotificationTrigger(dateMatching: secondDateComponents, repeats: true)
+        let secondRequest = UNNotificationRequest(identifier: identifier + "-evening", content: content2, trigger: secondTrigger)
+        
+        notificationCenter.removePendingNotificationRequests(withIdentifiers: [identifier + "-morning", identifier + "-evening"])
+        notificationCenter.add(firstRequest)
+        notificationCenter.add(secondRequest)
     }
 }
 
