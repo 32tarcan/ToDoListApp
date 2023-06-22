@@ -10,14 +10,12 @@ import SwiftUI
 struct HeaderView: View {
     let title: String
     let subtitle: String
-    let angle: Double
     let background: Color
     
     var body: some View {
             ZStack {
                 RoundedRectangle(cornerRadius: 0)
                     .foregroundColor(background)
-                    .rotationEffect(Angle(degrees: angle))
                 
                 VStack {
                     Text(title)
@@ -46,7 +44,6 @@ struct HeaderView: View {
         static var previews: some View {
             HeaderView(title: "Title",
                        subtitle: "Subtitle",
-                       angle: 15,
                        background: .blue)
             
         }

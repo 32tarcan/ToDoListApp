@@ -17,7 +17,6 @@ struct LoginView: View {
                 // Hearder
                 HeaderView(title: "To Do List",
                            subtitle: "Take action now",
-                           angle: 10,
                            background: .gray)
                 
                 
