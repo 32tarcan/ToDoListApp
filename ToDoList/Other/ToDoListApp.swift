@@ -10,7 +10,7 @@ import SwiftUI
 import UserNotifications
 import IQKeyboardManagerSwift
 
-@main
+
 struct ToDoListApp: App {
     
     init() {

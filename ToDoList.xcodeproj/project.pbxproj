@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		AF931CD62A4745B600729FCD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF931CD52A4745B600729FCD /* CoreData.framework */; };
+		AF931CD92A47463800729FCD /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF931CD72A47463800729FCD /* ToDoList.xcdatamodeld */; };
+		AF931CDF2A474C0200729FCD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CDE2A474C0200729FCD /* Persistence.swift */; };
+		AF931CE12A474C2E00729FCD /* DateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CE02A474C2E00729FCD /* DateHolder.swift */; };
+		AF931CE32A474C3A00729FCD /* TastFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CE22A474C3A00729FCD /* TastFilter.swift */; };
+		AF931CE52A474C4D00729FCD /* TaskItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CE42A474C4D00729FCD /* TaskItemExtension.swift */; };
+		AF931CE92A474CAE00729FCD /* TastListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CE82A474CAE00729FCD /* TastListView.swift */; };
+		AF931CEB2A474CBB00729FCD /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CEA2A474CBB00729FCD /* TaskEditView.swift */; };
+		AF931CED2A474CC700729FCD /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CEC2A474CC700729FCD /* TaskCell.swift */; };
+		AF931CEF2A474CD500729FCD /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CEE2A474CD500729FCD /* FloatingButton.swift */; };
+		AF931CF12A474CE300729FCD /* DateScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CF02A474CE300729FCD /* DateScroller.swift */; };
+		AF931CF32A474CF000729FCD /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CF22A474CF000729FCD /* CheckBoxView.swift */; };
+		AF931CF52A474EA700729FCD /* ToDooListasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CF42A474EA700729FCD /* ToDooListasApp.swift */; };
 		AF9FA2D32A39DFD1002E2C71 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FA2D22A39DFD1002E2C71 /* ToDoListApp.swift */; };
 		AF9FA2D52A39DFD1002E2C71 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FA2D42A39DFD1002E2C71 /* MainView.swift */; };
 		AF9FA2D72A39DFD2002E2C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9FA2D62A39DFD2002E2C71 /* Assets.xcassets */; };
@@ -40,6 +52,18 @@
 
 /* Begin PBXFileReference section */
 		AF931CD52A4745B600729FCD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AF931CD82A47463800729FCD /* ToDoListasData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListasData.xcdatamodel; sourceTree = "<group>"; };
+		AF931CDE2A474C0200729FCD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		AF931CE02A474C2E00729FCD /* DateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHolder.swift; sourceTree = "<group>"; };
+		AF931CE22A474C3A00729FCD /* TastFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastFilter.swift; sourceTree = "<group>"; };
+		AF931CE42A474C4D00729FCD /* TaskItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemExtension.swift; sourceTree = "<group>"; };
+		AF931CE82A474CAE00729FCD /* TastListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastListView.swift; sourceTree = "<group>"; };
+		AF931CEA2A474CBB00729FCD /* TaskEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditView.swift; sourceTree = "<group>"; };
+		AF931CEC2A474CC700729FCD /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		AF931CEE2A474CD500729FCD /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		AF931CF02A474CE300729FCD /* DateScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScroller.swift; sourceTree = "<group>"; };
+		AF931CF22A474CF000729FCD /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		AF931CF42A474EA700729FCD /* ToDooListasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDooListasApp.swift; sourceTree = "<group>"; };
 		AF9FA2CF2A39DFD1002E2C71 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9FA2D22A39DFD1002E2C71 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		AF9FA2D42A39DFD1002E2C71 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -92,6 +116,61 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF931CDA2A474BA400729FCD /* FireBase  */ = {
+			isa = PBXGroup;
+			children = (
+				AF9FA2FF2A39EE07002E2C71 /* MainViewViewModel.swift */,
+				AF9FA30B2A39EE63002E2C71 /* ToDoListItemViewViewModel.swift */,
+				AF9FA3012A39EE14002E2C71 /* ProfileViewViewModel.swift */,
+				AF9FA3052A39EE37002E2C71 /* NewItemViewViewModel.swift */,
+				AF9FA3072A39EE45002E2C71 /* LoginViewViewModel.swift */,
+				AF9FA3092A39EE52002E2C71 /* RegisterViewViewModel.swift */,
+				AF9FA3032A39EE25002E2C71 /* ToDoListViewViewModel.swift */,
+			);
+			path = "FireBase ";
+			sourceTree = "<group>";
+		};
+		AF931CDB2A474BC200729FCD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AF931CE02A474C2E00729FCD /* DateHolder.swift */,
+				AF931CDE2A474C0200729FCD /* Persistence.swift */,
+				AF931CE22A474C3A00729FCD /* TastFilter.swift */,
+				AF931CE42A474C4D00729FCD /* TaskItemExtension.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AF931CE62A474C6800729FCD /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				AF9FA2D42A39DFD1002E2C71 /* MainView.swift */,
+				AF9FA2EF2A39ED0F002E2C71 /* ProfileView.swift */,
+				AF9FA2F12A39ED40002E2C71 /* ToDoListView.swift */,
+				AF9FA2F92A39ED97002E2C71 /* ToDoListItemView.swift */,
+				AF9FA2F32A39ED4D002E2C71 /* NewItemView.swift */,
+				AF9FA2F72A39ED5F002E2C71 /* RegisterView.swift */,
+				AF9FA2F52A39ED54002E2C71 /* LoginView.swift */,
+				AF9FA30D2A3A1074002E2C71 /* HeaderView.swift */,
+				AF9FA30F2A3A1D31002E2C71 /* TLButton.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		AF931CE72A474C7E00729FCD /* DoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AF931CF22A474CF000729FCD /* CheckBoxView.swift */,
+				AF931CF02A474CE300729FCD /* DateScroller.swift */,
+				AF931CEE2A474CD500729FCD /* FloatingButton.swift */,
+				AF931CEC2A474CC700729FCD /* TaskCell.swift */,
+				AF931CEA2A474CBB00729FCD /* TaskEditView.swift */,
+				AF931CE82A474CAE00729FCD /* TastListView.swift */,
+				AF931CF42A474EA700729FCD /* ToDooListasApp.swift */,
+			);
+			path = DoreData;
+			sourceTree = "<group>";
+		};
 		AF9FA2C62A39DFD1002E2C71 = {
 			isa = PBXGroup;
 			children = (
@@ -133,15 +212,8 @@
 		AF9FA2EB2A39EB4F002E2C71 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AF9FA2D42A39DFD1002E2C71 /* MainView.swift */,
-				AF9FA2EF2A39ED0F002E2C71 /* ProfileView.swift */,
-				AF9FA2F12A39ED40002E2C71 /* ToDoListView.swift */,
-				AF9FA2F92A39ED97002E2C71 /* ToDoListItemView.swift */,
-				AF9FA2F32A39ED4D002E2C71 /* NewItemView.swift */,
-				AF9FA2F52A39ED54002E2C71 /* LoginView.swift */,
-				AF9FA2F72A39ED5F002E2C71 /* RegisterView.swift */,
-				AF9FA30D2A3A1074002E2C71 /* HeaderView.swift */,
-				AF9FA30F2A3A1D31002E2C71 /* TLButton.swift */,
+				AF931CE72A474C7E00729FCD /* DoreData */,
+				AF931CE62A474C6800729FCD /* Firebase */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,13 +221,8 @@
 		AF9FA2EC2A39EB59002E2C71 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				AF9FA2FF2A39EE07002E2C71 /* MainViewViewModel.swift */,
-				AF9FA3012A39EE14002E2C71 /* ProfileViewViewModel.swift */,
-				AF9FA30B2A39EE63002E2C71 /* ToDoListItemViewViewModel.swift */,
-				AF9FA3052A39EE37002E2C71 /* NewItemViewViewModel.swift */,
-				AF9FA3072A39EE45002E2C71 /* LoginViewViewModel.swift */,
-				AF9FA3092A39EE52002E2C71 /* RegisterViewViewModel.swift */,
-				AF9FA3032A39EE25002E2C71 /* ToDoListViewViewModel.swift */,
+				AF931CDB2A474BC200729FCD /* CoreData */,
+				AF931CDA2A474BA400729FCD /* FireBase  */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -172,11 +239,12 @@
 		AF9FA2EE2A39EB6E002E2C71 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				AFC4C9CB2A3CB317008B9361 /* Launch Screen.storyboard */,
 				AF9FA2D62A39DFD2002E2C71 /* Assets.xcassets */,
 				AF9FA2E92A39EAFD002E2C71 /* GoogleService-Info.plist */,
 				AF9FA2D22A39DFD1002E2C71 /* ToDoListApp.swift */,
 				AF9FA3112A3A279A002E2C71 /* Extensions.swift */,
-				AFC4C9CB2A3CB317008B9361 /* Launch Screen.storyboard */,
+				AF931CD72A47463800729FCD /* ToDoList.xcdatamodeld */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -268,20 +336,32 @@
 				AF9FA2D52A39DFD1002E2C71 /* MainView.swift in Sources */,
 				AF9FA30C2A39EE63002E2C71 /* ToDoListItemViewViewModel.swift in Sources */,
 				AF9FA30A2A39EE52002E2C71 /* RegisterViewViewModel.swift in Sources */,
+				AF931CF52A474EA700729FCD /* ToDooListasApp.swift in Sources */,
 				AF9FA3002A39EE07002E2C71 /* MainViewViewModel.swift in Sources */,
+				AF931CE52A474C4D00729FCD /* TaskItemExtension.swift in Sources */,
 				AF9FA2F22A39ED40002E2C71 /* ToDoListView.swift in Sources */,
+				AF931CED2A474CC700729FCD /* TaskCell.swift in Sources */,
 				AF9FA3102A3A1D31002E2C71 /* TLButton.swift in Sources */,
 				AF9FA2F82A39ED5F002E2C71 /* RegisterView.swift in Sources */,
+				AF931CF12A474CE300729FCD /* DateScroller.swift in Sources */,
 				AF9FA3022A39EE14002E2C71 /* ProfileViewViewModel.swift in Sources */,
 				AF9FA2F02A39ED0F002E2C71 /* ProfileView.swift in Sources */,
+				AF931CE92A474CAE00729FCD /* TastListView.swift in Sources */,
+				AF931CDF2A474C0200729FCD /* Persistence.swift in Sources */,
+				AF931CE12A474C2E00729FCD /* DateHolder.swift in Sources */,
+				AF931CEB2A474CBB00729FCD /* TaskEditView.swift in Sources */,
 				AF9FA2FC2A39EDD4002E2C71 /* User.swift in Sources */,
 				AF9FA2FE2A39EDDF002E2C71 /* ToDolistItem.swift in Sources */,
+				AF931CEF2A474CD500729FCD /* FloatingButton.swift in Sources */,
 				AF9FA3042A39EE25002E2C71 /* ToDoListViewViewModel.swift in Sources */,
 				AF9FA3082A39EE45002E2C71 /* LoginViewViewModel.swift in Sources */,
 				AF9FA3122A3A279A002E2C71 /* Extensions.swift in Sources */,
 				AF9FA2FA2A39ED97002E2C71 /* ToDoListItemView.swift in Sources */,
 				AF9FA2D32A39DFD1002E2C71 /* ToDoListApp.swift in Sources */,
 				AF9FA2F42A39ED4D002E2C71 /* NewItemView.swift in Sources */,
+				AF931CE32A474C3A00729FCD /* TastFilter.swift in Sources */,
+				AF931CD92A47463800729FCD /* ToDoList.xcdatamodeld in Sources */,
+				AF931CF32A474CF000729FCD /* CheckBoxView.swift in Sources */,
 				AF9FA3062A39EE37002E2C71 /* NewItemViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +617,19 @@
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		AF931CD72A47463800729FCD /* ToDoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF931CD82A47463800729FCD /* ToDoListasData.xcdatamodel */,
+			);
+			currentVersion = AF931CD82A47463800729FCD /* ToDoListasData.xcdatamodel */;
+			path = ToDoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AF9FA2C72A39DFD1002E2C71 /* Project object */;
 }
