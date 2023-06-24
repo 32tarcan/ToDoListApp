@@ -1,16 +1,17 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  ToDoList
 //
-//  Created by Bahadır Tarcan on 14.06.2023.
+//  Created by Bahadır Tarcan on 25.06.2023.
 //
+
 
 import SwiftUI
 
 
 struct MainView: View {
     @StateObject var viewModel = MainViewViewModel()
-    
+    let persistenceController = PersistenceController.shared
     
 
     
@@ -20,7 +21,12 @@ struct MainView: View {
             accountView
             
         }else {
-            LoginView()
+            let context = persistenceController.container.viewContext
+            let dateHolder = DateHolder(context)
+            
+            TaskListView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(dateHolder)
         }
         
     }
