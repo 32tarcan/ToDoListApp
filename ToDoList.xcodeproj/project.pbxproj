@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF931CD62A4745B600729FCD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF931CD52A4745B600729FCD /* CoreData.framework */; };
 		AF9FA2D32A39DFD1002E2C71 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FA2D22A39DFD1002E2C71 /* ToDoListApp.swift */; };
 		AF9FA2D52A39DFD1002E2C71 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FA2D42A39DFD1002E2C71 /* MainView.swift */; };
 		AF9FA2D72A39DFD2002E2C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9FA2D62A39DFD2002E2C71 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF931CD52A4745B600729FCD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AF9FA2CF2A39DFD1002E2C71 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9FA2D22A39DFD1002E2C71 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		AF9FA2D42A39DFD1002E2C71 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			files = (
 				AF9FA2E22A39E47E002E2C71 /* FirebaseAuth in Frameworks */,
 				AFF00BF52A43493C00C11913 /* IQKeyboardManagerSwift in Frameworks */,
+				AF931CD62A4745B600729FCD /* CoreData.framework in Frameworks */,
 				AF9FA2E42A39E47E002E2C71 /* FirebaseFirestore in Frameworks */,
 				AF9FA2E62A39E47E002E2C71 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -81,11 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF931CD42A4745B600729FCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF931CD52A4745B600729FCD /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF9FA2C62A39DFD1002E2C71 = {
 			isa = PBXGroup;
 			children = (
 				AF9FA2D12A39DFD1002E2C71 /* ToDoList */,
 				AF9FA2D02A39DFD1002E2C71 /* Products */,
+				AF931CD42A4745B600729FCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -403,7 +415,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoList/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "To Doo List";
+				INFOPLIST_KEY_CFBundleDisplayName = "To Doo Listas\n";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -438,7 +450,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoList/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "To Doo List";
+				INFOPLIST_KEY_CFBundleDisplayName = "To Doo Listas\n";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
