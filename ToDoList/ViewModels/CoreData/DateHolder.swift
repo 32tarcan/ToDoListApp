@@ -10,6 +10,7 @@ import CoreData
 
 class DateHolder: ObservableObject
 {
+ 
     @Published var date = Date()
     @Published var taskItems: [TaskItem] = []
     

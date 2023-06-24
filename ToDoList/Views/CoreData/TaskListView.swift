@@ -8,30 +8,27 @@
 import SwiftUI
 import CoreData
 
+
 struct TaskListView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var dateHolder: DateHolder
 
     @State var selectedFilter = TaskFilter.NonCompleted
-    
-    var body: some View
-    {
-        NavigationView
-        {
-            VStack
-            {
+    @State var isRegisterViewPresented = false
+
+    var body: some View {
+        NavigationView {
+            VStack {
                 DateScroller()
                     .padding()
                     .environmentObject(dateHolder)
-                ZStack
-                {
-                    List
-                    {
-                        ForEach(filteredTaskItems())
-                        { taskItem in
-                            NavigationLink(destination: TaskEditView(passedTaskItem: taskItem, initialDate: taskItem.dueDate!)
-                                .environmentObject(dateHolder))
-                            {
+                ZStack {
+                    List {
+                        ForEach(filteredTaskItems()) { taskItem in
+                            NavigationLink(
+                                destination: TaskEditView(passedTaskItem: taskItem, initialDate: taskItem.dueDate!)
+                                    .environmentObject(dateHolder)
+                            ) {
                                 TaskCell(passedTaskItem: taskItem)
                                     .environmentObject(dateHolder)
                             }
@@ -40,26 +37,49 @@ struct TaskListView: View {
                     }
                     .toolbar {
                         ToolbarItem(placement: .confirmationAction) {
-                            Picker("", selection: $selectedFilter.animation())
-                            {
-                                ForEach(TaskFilter.allFilters, id: \.self)
-                                {
-                                    filter in
+                            Picker("", selection: $selectedFilter.animation()) {
+                                ForEach(TaskFilter.allFilters, id: \.self) { filter in
                                     Text(filter.rawValue)
                                 }
                             }
                         }
-            
                     }
-                    
+
                     FloatingButton()
                         .environmentObject(dateHolder)
+
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                isRegisterViewPresented = true
+                            }) {
+                                
+                                NavigationLink(destination: RegisterView()) {
+                                    Text("Yeni Kayıt")
+                                        .font(.headline)
+                                        .foregroundColor(.white)
+                                        .padding()
+                                    
+                                }
+                            }
+                            .padding(16)
+                            NavigationLink(destination: LoginView()) {
+                                Text("Giriş Yap")
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                    .padding()
+                            }
+                            Spacer()
+                        }
+                    }
                 }
             }
             .navigationTitle("To Doo Listas")
         }
     }
-
+    
     private func filteredTaskItems() -> [TaskItem]
     {
         if selectedFilter == TaskFilter.Completed
@@ -79,12 +99,12 @@ struct TaskListView: View {
         
         return dateHolder.taskItems
     }
-
+    
     
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             offsets.map { filteredTaskItems()[$0] }.forEach(viewContext.delete)
-
+            
             dateHolder.saveContext(viewContext)
         }
     }

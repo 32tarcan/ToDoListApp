@@ -7,15 +7,17 @@
 
 import SwiftUI
 
+
 struct LoginView: View {
     
     @StateObject var viewModel = LoginViewViewModel()
+    
     
     var body: some View {
         NavigationView {
             VStack {
                 // Hearder
-                HeaderView(title: "To Do List",
+                HeaderView(title: "To Doo Listas",
                            subtitle: "Take action now",
                            background: .gray)
                 
@@ -44,16 +46,7 @@ struct LoginView: View {
                     }
                     
                     
-                    // Create Account
-                    VStack {
-                        Text("New around here?")
-                        
-                        NavigationLink("Create An Account",
-                                       destination: RegisterView())
-                        
-                    }
-                    .offset(y: 180)
-                    
+                   
                     
                 }
             }

@@ -13,7 +13,7 @@
 		AF931CE12A474C2E00729FCD /* DateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CE02A474C2E00729FCD /* DateHolder.swift */; };
 		AF931CE32A474C3A00729FCD /* TastFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CE22A474C3A00729FCD /* TastFilter.swift */; };
 		AF931CE52A474C4D00729FCD /* TaskItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CE42A474C4D00729FCD /* TaskItemExtension.swift */; };
-		AF931CE92A474CAE00729FCD /* TastListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CE82A474CAE00729FCD /* TastListView.swift */; };
+		AF931CE92A474CAE00729FCD /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CE82A474CAE00729FCD /* TaskListView.swift */; };
 		AF931CEB2A474CBB00729FCD /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CEA2A474CBB00729FCD /* TaskEditView.swift */; };
 		AF931CED2A474CC700729FCD /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CEC2A474CC700729FCD /* TaskCell.swift */; };
 		AF931CEF2A474CD500729FCD /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF931CEE2A474CD500729FCD /* FloatingButton.swift */; };
@@ -57,7 +57,7 @@
 		AF931CE02A474C2E00729FCD /* DateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHolder.swift; sourceTree = "<group>"; };
 		AF931CE22A474C3A00729FCD /* TastFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastFilter.swift; sourceTree = "<group>"; };
 		AF931CE42A474C4D00729FCD /* TaskItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemExtension.swift; sourceTree = "<group>"; };
-		AF931CE82A474CAE00729FCD /* TastListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastListView.swift; sourceTree = "<group>"; };
+		AF931CE82A474CAE00729FCD /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		AF931CEA2A474CBB00729FCD /* TaskEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditView.swift; sourceTree = "<group>"; };
 		AF931CEC2A474CC700729FCD /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		AF931CEE2A474CD500729FCD /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 			path = Firebase;
 			sourceTree = "<group>";
 		};
-		AF931CE72A474C7E00729FCD /* DoreData */ = {
+		AF931CE72A474C7E00729FCD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				AF931CF22A474CF000729FCD /* CheckBoxView.swift */,
@@ -165,10 +165,10 @@
 				AF931CEE2A474CD500729FCD /* FloatingButton.swift */,
 				AF931CEC2A474CC700729FCD /* TaskCell.swift */,
 				AF931CEA2A474CBB00729FCD /* TaskEditView.swift */,
-				AF931CE82A474CAE00729FCD /* TastListView.swift */,
+				AF931CE82A474CAE00729FCD /* TaskListView.swift */,
 				AF931CF42A474EA700729FCD /* ToDooListasApp.swift */,
 			);
-			path = DoreData;
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		AF9FA2C62A39DFD1002E2C71 = {
@@ -212,7 +212,7 @@
 		AF9FA2EB2A39EB4F002E2C71 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AF931CE72A474C7E00729FCD /* DoreData */,
+				AF931CE72A474C7E00729FCD /* CoreData */,
 				AF931CE62A474C6800729FCD /* Firebase */,
 			);
 			path = Views;
@@ -346,7 +346,7 @@
 				AF931CF12A474CE300729FCD /* DateScroller.swift in Sources */,
 				AF9FA3022A39EE14002E2C71 /* ProfileViewViewModel.swift in Sources */,
 				AF9FA2F02A39ED0F002E2C71 /* ProfileView.swift in Sources */,
-				AF931CE92A474CAE00729FCD /* TastListView.swift in Sources */,
+				AF931CE92A474CAE00729FCD /* TaskListView.swift in Sources */,
 				AF931CDF2A474C0200729FCD /* Persistence.swift in Sources */,
 				AF931CE12A474C2E00729FCD /* DateHolder.swift in Sources */,
 				AF931CEB2A474CBB00729FCD /* TaskEditView.swift in Sources */,

@@ -7,22 +7,27 @@
 
 import FirebaseAuth
 import Foundation
+import Firebase
 
 class LoginViewViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     @Published var errorMessage = ""
     
+    
     init() {}
     
     func login() {
+        
         guard validate() else {
+            
             return
         }
         
         // Try log in
         Auth.auth().signIn(withEmail: email, password: password)
        
+        
         
         
         
