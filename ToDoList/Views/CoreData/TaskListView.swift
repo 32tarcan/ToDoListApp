@@ -44,36 +44,32 @@ struct TaskListView: View {
                             }
                         }
                     }
-
+                    
                     FloatingButton()
                         .environmentObject(dateHolder)
-
+                    
                     VStack {
                         Spacer()
                         HStack {
-                            Button(action: {
-                                isRegisterViewPresented = true
-                            }) {
-                                NavigationLink(destination: RegisterView()) {
-                                    Text("Register")
-                                        .font(.headline)
-                                        .foregroundColor(.blue)
-                                        .padding(.horizontal, 20) // Yatay boşluğu ayarlayın
-                                        .padding(.vertical, -50) // Dikey boşluğu ayarlayın
-                                }
+                            NavigationLink(destination: RegisterView()) {
+                                Text("Register")
+                                    .font(.headline)
+                                    .foregroundColor(.blue)
+                                    .padding(.horizontal, 20)
+                                    .padding(.vertical, 20)
                             }
-                            .frame(maxWidth: .infinity, alignment: .leading)
                             
                             NavigationLink(destination: LoginView()) {
                                 Text("Log In")
                                     .font(.headline)
                                     .foregroundColor(.blue)
-                                    .padding(.horizontal, -70) // Yatay boşluğu ayarlayın
-                                    .padding(.vertical, -50) // Dikey boşluğu ayarlayın
+                                    .padding(.horizontal, 20)
+                                    .padding(.vertical, 20)
                             }
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            
+                            Spacer()
                         }
-                        
+                    
                     }
                 }
             }
