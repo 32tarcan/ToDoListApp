@@ -13,8 +13,10 @@ struct FloatingButton: View
     
     var body: some View
     {
+        
         VStack
         {
+    
             Spacer()
             HStack
             {
@@ -24,13 +26,16 @@ struct FloatingButton: View
                 {
                     Text("+")
                         .font(.headline)
+                    
                 }
-                .padding(15)
+                .padding(.vertical, 20)
+                .padding(.horizontal, 20)
                 .foregroundColor(.white)
-                .background(Color.accentColor)
-                .cornerRadius(30)
-                .padding(30)
+                .background(Color.blue)
+                .cornerRadius(100)
+                .padding()
                 .shadow(color: .black.opacity(0.3), radius: 3, x: 3, y: 3)
+                .padding(.vertical)
             }
         }
     }

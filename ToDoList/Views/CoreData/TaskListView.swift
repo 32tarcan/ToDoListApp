@@ -51,28 +51,29 @@ struct TaskListView: View {
                     VStack {
                         Spacer()
                         HStack {
-                            Spacer()
                             Button(action: {
                                 isRegisterViewPresented = true
                             }) {
-                                
                                 NavigationLink(destination: RegisterView()) {
-                                    Text("Yeni Kayıt")
+                                    Text("Register")
                                         .font(.headline)
-                                        .foregroundColor(.white)
-                                        .padding()
-                                    
+                                        .foregroundColor(.blue)
+                                        .padding(.horizontal, 20) // Yatay boşluğu ayarlayın
+                                        .padding(.vertical, -50) // Dikey boşluğu ayarlayın
                                 }
                             }
-                            .padding(16)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            
                             NavigationLink(destination: LoginView()) {
-                                Text("Giriş Yap")
+                                Text("Log In")
                                     .font(.headline)
-                                    .foregroundColor(.white)
-                                    .padding()
+                                    .foregroundColor(.blue)
+                                    .padding(.horizontal, -70) // Yatay boşluğu ayarlayın
+                                    .padding(.vertical, -50) // Dikey boşluğu ayarlayın
                             }
-                            Spacer()
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         }
+                        
                     }
                 }
             }
